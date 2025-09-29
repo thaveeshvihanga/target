@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/newTaskText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/newTaskDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newTaskText"
+            android:layout_marginTop="12dp"
+            android:hint="Description (optional)"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <TextView
+            android:id="@+id/newTaskDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newTaskDesc"
+            android:layout_marginTop="12dp"
+            android:hint="Pick due date (optional)"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/newTaskTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newTaskDueDate"
+            android:layout_marginTop="12dp"
+            android:hint="Tags (comma separated)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/newTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newTaskTags"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/transparent"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</ScrollView>
